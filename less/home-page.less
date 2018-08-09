@@ -1,4 +1,35 @@
+header {
+    border-bottom: 2px dashed #c0c0c0;
+    margin: auto;
+    box-sizing: border-box;
+    width: 100%;
+
+    @media @tablet {
+      padding: 2%;
+    }
+
+    @media @mobile {
+      padding: 5%;
+    }
+}
+.btn {
+  @media @mobile {
+   width: 100%;
+  }
+}
+.btn a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  display: block;
+}
+
+
 .home {
+
+  .hero-image {
+    max-width: 100%;
+  }
 
   .content-section {
     margin: 30px 0;
@@ -6,16 +37,34 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    @media @tablet {
+      padding: 2%;
+    }
+
+    @media @mobile {
+      padding: 4%;
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 100%;
+      }
+
+      @media @mobile {
+        margin-bottom: 5%;
+      }
 
       img {
         border-radius: 10px;
@@ -30,6 +79,10 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+        padding: 6%;
+      }
     }
 
     .img-content {
@@ -41,11 +94,16 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      width: 98%;
+      padding: 0 2%;
+    }
 
     img {
       border-radius: 10px;
+      }
     }
-  }
+  
 
   .content-pick {
     padding-top: 30px;
@@ -53,9 +111,30 @@
     display: flex;
     justify-content: space-between;
 
+    @media @tablet {
+      flex-wrap: wrap;
+    }
+
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+    
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @tablet {
+        width: 48%;
+        padding: 2%;
+      }
+
+      @media @mobile {
+        width: 94%;
+        padding: 6%;
+      }
+      
+     
     }
   }
 }// home
