@@ -1,1 +1,28 @@
 // Mixins in here
+.button-style (@background,@color) {
+	padding: 12px;
+	width: 220px;
+	height: auto;
+	color: @color;
+	border-radius: 15px;
+	text-align: center;
+	background: @background;
+	font-size: 1.3rem;
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.button-style(#008080, white);
+	@media @mobile {
+
+	}
+.btn a {
+	@media @mobile {
+		display: inline-block;
+		margin: 20px;
+	}
+}
+
+}
